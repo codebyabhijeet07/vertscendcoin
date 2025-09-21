@@ -1,4 +1,5 @@
+---
 deployment:
   tasks:
-    - export DEPLOY_DIR=/home/vertscoin/public_html
-    - /bin/cp -R * $DEPLOY_DIR
+    - export DEPLOY_PATH=/home/vertscoin/public_html
+    - /bin/cp -R .[^.]* * $DEPLOY_PATH
